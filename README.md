@@ -13,3 +13,5 @@ TestApplication is the testing class.
 Read the wiki for further configuration/setup and build information.
 
 https://github.com/Mostafism/socialgraph-neo4j-fromjson/wiki
+
+Note: Do not forget to add the URL of the Json file in the ApplicationMain and TestApplication.
