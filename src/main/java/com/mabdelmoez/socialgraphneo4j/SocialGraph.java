@@ -19,7 +19,7 @@ public class SocialGraph{
                  personsHashMap.put(person.getID(), person);
                  dbHandler.addPersonToGraph(person);
         }
-        Arrays.fill(persons, null); //free up memory after transfer to the hashmap
+       persons = null; //free up memory after transfer to the hashmap
     }
 
     public static Person getPersonById(int id) {

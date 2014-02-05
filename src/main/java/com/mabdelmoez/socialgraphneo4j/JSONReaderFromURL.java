@@ -17,9 +17,9 @@ import org.json.JSONException;
 
 public class JSONReaderFromURL {
 
-  public static Person[] getPersonsFromJSON(String url) throws IOException, JSONException{ //Parse the file to the class structure directly 
+  public static Person[] getPersonsFromJSON(URL url) throws IOException, JSONException{ //Parse the file to the class structure directly 
       JsonFactory jfactory = new JsonFactory();
-      JsonParser jParser = jfactory.createJsonParser(new URL(url));
+      JsonParser jParser = jfactory.createJsonParser(url);
       ObjectMapper mapper = new ObjectMapper();
       Person[] SocialGraphOfPersons = mapper.readValue(jParser, Person[].class);
       return SocialGraphOfPersons;

@@ -9,6 +9,7 @@ import org.junit.BeforeClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.json.*;
+import java.net.URL;
 
 /**
   * @author mabdelmoez
@@ -26,7 +27,7 @@ public class TestApplication {
 	 */
 	@BeforeClass
 	public static void testGraphCreation() throws Exception {
-	   String URL = "";
+	   URL URL = new URL("");
            SocialGraph dbGraph = new SocialGraph(JSONReaderFromURL.getPersonsFromJSON((URL)));
 	}
 

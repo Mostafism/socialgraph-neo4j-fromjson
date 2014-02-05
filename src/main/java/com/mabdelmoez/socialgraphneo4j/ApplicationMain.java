@@ -2,7 +2,7 @@ package com.mabdelmoez.socialgraphneo4j;
 
 import org.json.*;
 import java.io.IOException;
-
+import java.net.URL;
 /**
   * @author mabdelmoez
   * Social Network Graph from JSON file URL with Local Neo4j Graph DataBase And Cypher Requests to get Person/s, NodeURL, Friends, Friends of Friends, Suggested Friends with a simple idea of caching data into hashmaps
@@ -15,7 +15,7 @@ public class ApplicationMain
    
     public static void main( String[] args ) throws IOException, JSONException
     {
-        String URL = "";
+        URL URL = new URL("");
         SocialGraph dbGraph = new SocialGraph(JSONReaderFromURL.getPersonsFromJSON((URL)));
         LocalGraphDatabaseHandler db = new LocalGraphDatabaseHandler();
  

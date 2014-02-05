@@ -19,7 +19,7 @@ import org.json.*;
 
 public class LocalGraphDatabaseHandler {
 
-    private static final String SERVER_ROOT_URI = "http://localhost:7474";
+    private static final String SERVER_ROOT_URI = "http://localhost:7474"; 
     public static final HashMap<Integer, String> nodesURLs = new HashMap<Integer, String>(); //for faster access so no need to query the server
 
 
@@ -46,7 +46,7 @@ public class LocalGraphDatabaseHandler {
      * @return
      */
     private String createNode(){
-        String location = null;
+        String location = null; //since there is no special characters in the url so we can have it as string .. 
         try{
             String nodePointUrl = LocalGraphDatabaseHandler.SERVER_ROOT_URI + "/db/data/node/";
             HttpClient client = new HttpClient();
