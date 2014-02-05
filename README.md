@@ -14,4 +14,4 @@ Read the wiki for further configuration/setup and build information.
 
 https://github.com/Mostafism/socialgraph-neo4j-fromjson/wiki
 
-Note: Do not forget to add the URL of the Json file in the ApplicationMain and TestApplication.
+Note: Do not forget to add the URL of the Json file in the ApplicationMain and TestApplication as well as cleaning the database before each test if you are using the same list of enteries. See wiki for clean command.
